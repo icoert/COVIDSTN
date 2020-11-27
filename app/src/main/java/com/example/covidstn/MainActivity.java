@@ -1,10 +1,17 @@
 package com.example.covidstn;
 
 import android.os.Bundle;
+import android.view.MenuItem;
 
+import com.example.covidstn.ui.check_in.CheckInFragment;
+import com.example.covidstn.ui.stats.StatsFragment;
+import com.example.covidstn.ui.stiri.StiriFragment;
+import com.example.covidstn.ui.urmarire.UrmarireFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
@@ -16,15 +23,34 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        BottomNavigationView navView = findViewById(R.id.nav_view);
-        // Passing each menu ID as a set of Ids because each
-        // menu should be considered as top level destinations.
-        AppBarConfiguration appBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.navigation_home, R.id.navigation_dashboard, R.id.navigation_notifications)
-                .build();
-        NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
-        NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
-        NavigationUI.setupWithNavController(navView, navController);
+
+        BottomNavigationView bottomNavigation=findViewById(R.id.bottom_nav_view);
+        bottomNavigation.setOnNavigationItemSelectedListener(navListner);
+
+        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new StatsFragment()).commit();
     }
 
+    private BottomNavigationView.OnNavigationItemSelectedListener navListner =new BottomNavigationView.OnNavigationItemSelectedListener(){
+        @Override
+        public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
+            Fragment selectedFragment=null;
+            switch (menuItem.getItemId()){
+                case R.id.navigation_stats:
+                    selectedFragment=new StatsFragment();
+                    break;
+                case R.id.navigation_stiri:
+                    selectedFragment=new StiriFragment();
+                    break;
+                case R.id.navigation_check_in:
+                    selectedFragment=new CheckInFragment();
+                    break;
+                case R.id.navigation_umarire:
+                    selectedFragment=new UrmarireFragment();
+                    break;
+            }
+
+            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,selectedFragment).commit();
+            return true;
+        }
+    };
 }
