@@ -1,4 +1,4 @@
-package com.example.covidstn.ui.stiri;
+package com.example.covidstn.ui.tracking;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -11,11 +11,11 @@ import androidx.fragment.app.Fragment;
 
 import com.example.covidstn.R;
 
-public class StiriFragment extends Fragment {
+public class TrackingFragment extends Fragment {
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_stiri,container,false);
+        return inflater.inflate(R.layout.fragment_tracking,container,false);
     }
 }

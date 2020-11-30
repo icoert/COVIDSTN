@@ -4,18 +4,14 @@ import android.os.Bundle;
 import android.view.MenuItem;
 
 import com.example.covidstn.ui.check_in.CheckInFragment;
-import com.example.covidstn.ui.stats.StatsFragment;
-import com.example.covidstn.ui.stiri.StiriFragment;
-import com.example.covidstn.ui.urmarire.UrmarireFragment;
+import com.example.covidstn.ui.update.UpdateFragment;
+import com.example.covidstn.ui.news.NewsFragment;
+import com.example.covidstn.ui.tracking.TrackingFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
-import androidx.navigation.NavController;
-import androidx.navigation.Navigation;
-import androidx.navigation.ui.AppBarConfiguration;
-import androidx.navigation.ui.NavigationUI;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -27,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
         BottomNavigationView bottomNavigation=findViewById(R.id.bottom_nav_view);
         bottomNavigation.setOnNavigationItemSelectedListener(navListner);
 
-        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new StatsFragment()).commit();
+        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new UpdateFragment()).commit();
     }
 
     private BottomNavigationView.OnNavigationItemSelectedListener navListner =new BottomNavigationView.OnNavigationItemSelectedListener(){
@@ -35,17 +31,17 @@ public class MainActivity extends AppCompatActivity {
         public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
             Fragment selectedFragment=null;
             switch (menuItem.getItemId()){
-                case R.id.navigation_stats:
-                    selectedFragment=new StatsFragment();
+                case R.id.navigation_update:
+                    selectedFragment=new UpdateFragment();
                     break;
-                case R.id.navigation_stiri:
-                    selectedFragment=new StiriFragment();
+                case R.id.navigation_news:
+                    selectedFragment=new NewsFragment();
                     break;
                 case R.id.navigation_check_in:
                     selectedFragment=new CheckInFragment();
                     break;
-                case R.id.navigation_umarire:
-                    selectedFragment=new UrmarireFragment();
+                case R.id.navigation_tracking:
+                    selectedFragment=new TrackingFragment();
                     break;
             }
 
