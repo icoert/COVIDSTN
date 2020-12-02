@@ -6,7 +6,7 @@ import android.view.MenuItem;
 import com.example.covidstn.ui.check_in.CheckInFragment;
 import com.example.covidstn.ui.update.UpdateFragment;
 import com.example.covidstn.ui.news.NewsFragment;
-import com.example.covidstn.ui.tracking.TrackingFragment;
+import com.example.covidstn.ui.help.HelpFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import androidx.annotation.NonNull;
@@ -37,11 +37,11 @@ public class MainActivity extends AppCompatActivity {
                 case R.id.navigation_news:
                     selectedFragment=new NewsFragment();
                     break;
-                case R.id.navigation_check_in:
+                case R.id.navigation_covid:
                     selectedFragment=new CheckInFragment();
                     break;
-                case R.id.navigation_tracking:
-                    selectedFragment=new TrackingFragment();
+                case R.id.navigation_help:
+                    selectedFragment=new HelpFragment();
                     break;
             }
 

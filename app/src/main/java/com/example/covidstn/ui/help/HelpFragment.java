@@ -1,4 +1,4 @@
-package com.example.covidstn.ui.tracking;
+package com.example.covidstn.ui.help;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -11,7 +11,7 @@ import androidx.fragment.app.Fragment;
 
 import com.example.covidstn.R;
 
-public class TrackingFragment extends Fragment {
+public class HelpFragment extends Fragment {
 
     @Nullable
     @Override
