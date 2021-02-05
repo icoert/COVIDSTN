@@ -5,7 +5,7 @@ import android.view.MenuItem;
 
 import com.example.covidstn.ui.check_in.CheckInFragment;
 import com.example.covidstn.ui.update.UpdateFragment;
-import com.example.covidstn.ui.news.NewsFragment;
+import com.example.covidstn.ui.vaccine.VaccineFragment;
 import com.example.covidstn.ui.help.HelpFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
                     selectedFragment=new UpdateFragment();
                     break;
                 case R.id.navigation_news:
-                    selectedFragment=new NewsFragment();
+                    selectedFragment=new VaccineFragment();
                     break;
                 case R.id.navigation_covid:
                     selectedFragment=new CheckInFragment();

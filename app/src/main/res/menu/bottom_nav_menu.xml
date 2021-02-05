@@ -8,8 +8,8 @@
 
     <item
         android:id="@+id/navigation_news"
-        android:icon="@drawable/ic_news"
-        android:title="@string/Stiri" />
+        android:icon="@drawable/ic_syringe"
+        android:title="@string/Vaccinare" />
 
     <item
         android:id="@+id/navigation_covid"

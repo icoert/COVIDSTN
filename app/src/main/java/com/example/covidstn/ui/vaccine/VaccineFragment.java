@@ -1,4 +1,4 @@
-package com.example.covidstn.ui.news;
+package com.example.covidstn.ui.vaccine;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -11,11 +11,11 @@ import androidx.fragment.app.Fragment;
 
 import com.example.covidstn.R;
 
-public class NewsFragment extends Fragment {
+public class VaccineFragment extends Fragment {
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_news,container,false);
+        return inflater.inflate(R.layout.fragment_vaccine,container,false);
     }
 }
