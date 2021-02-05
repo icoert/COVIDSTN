@@ -3,7 +3,6 @@ package com.example.covidstn;
 import android.os.Bundle;
 import android.view.MenuItem;
 
-import com.example.covidstn.ui.check_in.CheckInFragment;
 import com.example.covidstn.ui.update.UpdateFragment;
 import com.example.covidstn.ui.vaccine.VaccineFragment;
 import com.example.covidstn.ui.help.HelpFragment;
@@ -36,9 +35,6 @@ public class MainActivity extends AppCompatActivity {
                     break;
                 case R.id.navigation_news:
                     selectedFragment=new VaccineFragment();
-                    break;
-                case R.id.navigation_covid:
-                    selectedFragment=new CheckInFragment();
                     break;
                 case R.id.navigation_help:
                     selectedFragment=new HelpFragment();

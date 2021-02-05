@@ -4,17 +4,12 @@
     <item
         android:id="@+id/navigation_update"
         android:icon="@drawable/ic_update"
-        android:title="@string/stats" />
+        android:title="@string/Statistici" />
 
     <item
         android:id="@+id/navigation_news"
         android:icon="@drawable/ic_syringe"
         android:title="@string/Vaccinare" />
-
-    <item
-        android:id="@+id/navigation_covid"
-        android:icon="@drawable/ic_check_in"
-        android:title="Covid19" />
 
     <item
         android:id="@+id/navigation_help"
