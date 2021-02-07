@@ -3,7 +3,7 @@
 
     <item
         android:id="@+id/navigation_update"
-        android:icon="@drawable/ic_update"
+        android:icon="@drawable/ic_status"
         android:title="@string/Statistici" />
 
     <item
