@@ -1,4 +1,4 @@
-package com.example.covidstn;
+package com.example.covidstn.dto;
 
 import java.util.Map;
 

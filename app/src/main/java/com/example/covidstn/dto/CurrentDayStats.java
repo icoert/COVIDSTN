@@ -1,4 +1,6 @@
-package com.example.covidstn;
+package com.example.covidstn.dto;
+
+import com.example.covidstn.VaccineStats;
 
 import java.util.Map;
 

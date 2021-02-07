@@ -16,8 +16,8 @@ import androidx.fragment.app.FragmentTransaction;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.covidstn.CountyData;
-import com.example.covidstn.CovidData;
+import com.example.covidstn.dto.CountyData;
+import com.example.covidstn.dto.CovidData;
 import com.example.covidstn.R;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
