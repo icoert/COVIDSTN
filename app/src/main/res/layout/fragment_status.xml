@@ -13,12 +13,13 @@
             android:layout_height="100dp"
             android:layout_alignParentStart="true"
             android:layout_alignParentLeft="true"
-            android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginEnd="20dp"
+            android:layout_marginStart="21dp"
+            android:layout_marginLeft="21dp"
+            android:layout_marginEnd="17dp"
+            android:layout_marginTop="17dp"
+            android:layout_marginRight="17dp"
             app:cardCornerRadius="15dp"
             app:cardElevation="10dp">
 
@@ -39,14 +40,14 @@
                 android:layout_marginStart="120dp"
                 android:layout_marginLeft="120dp"
                 android:layout_marginTop="10dp"
-                android:text="Total cazuri confirmate"
-                android:textColor="@color/gray1"
-                android:textAlignment="center"
-                android:gravity="center_horizontal"
-                android:typeface="sans"
                 android:fontFamily="sans-serif"
+                android:gravity="center_horizontal"
+                android:text="Total cazuri confirmate"
+                android:textAlignment="center"
+                android:textColor="@color/gray1"
+                android:textSize="16sp"
                 android:textStyle="bold"
-                android:textSize="16sp"/>
+                android:typeface="sans" />
 
             <TextView
                 android:id="@+id/totalCasesNo"
@@ -55,13 +56,120 @@
                 android:layout_marginStart="120dp"
                 android:layout_marginLeft="120dp"
                 android:layout_marginTop="45dp"
+                android:fontFamily="sans-serif"
+                android:gravity="center_horizontal"
                 android:text="600,900"
                 android:textColor="@color/black"
-                android:gravity="center_horizontal"
-                android:typeface="sans"
-                android:fontFamily="sans-serif"
+                android:textSize="30sp"
                 android:textStyle="bold"
-                android:textSize="30sp"/>
+                android:typeface="sans" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="380dp"
+            android:layout_height="100dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="21dp"
+            android:layout_marginLeft="21dp"
+            android:layout_marginTop="258dp"
+            android:layout_marginEnd="19dp"
+            android:layout_marginRight="19dp"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="10dp">
+
+            <ImageView
+                android:id="@+id/femaleImg"
+                android:layout_width="58dp"
+                android:layout_height="58dp"
+                android:layout_marginStart="17dp"
+                android:layout_marginLeft="17dp"
+                android:layout_marginTop="17dp"
+                app:srcCompat="@drawable/ic_female_solid"
+                tools:ignore="VectorDrawableCompat" />
+
+            <TextView
+                android:id="@+id/percentageOfWomenTitle"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="80dp"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif"
+                android:gravity="center_horizontal"
+                android:text="Procent femei"
+                android:textAlignment="center"
+                android:textColor="@color/gray1"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:typeface="sans" />
+
+            <TextView
+                android:id="@+id/percentageOfWomen"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="80dp"
+                android:layout_marginLeft="120dp"
+                android:layout_marginTop="50dp"
+                android:fontFamily="sans-serif"
+                android:gravity="center_horizontal"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:typeface="sans" />
+
+            <ImageView
+                android:id="@+id/maleImg"
+                android:layout_width="58dp"
+                android:layout_height="58dp"
+                android:layout_marginStart="190dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                app:srcCompat="@drawable/ic_male_solid"
+                tools:ignore="VectorDrawableCompat" />
+
+            <TextView
+                android:id="@+id/percentageOfMenTitle"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="250dp"
+                android:layout_marginLeft="120dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif"
+                android:gravity="center_horizontal"
+                android:text="Procent barbati"
+                android:textAlignment="center"
+                android:textColor="@color/gray1"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:typeface="sans" />
+
+            <TextView
+                android:id="@+id/percentageOfMen"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="250dp"
+                android:layout_marginLeft="120dp"
+                android:layout_marginTop="50dp"
+                android:fontFamily="sans-serif"
+                android:gravity="center_horizontal"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:typeface="sans" />
+
+            <View
+                android:id="@+id/dividerPercent"
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="180dp"
+                android:layout_marginLeft="120dp"
+                android:background="?android:attr/listDivider" />
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
@@ -167,64 +275,6 @@
                 android:layout_marginLeft="120dp"
                 android:layout_height="match_parent"
                 android:background="?android:attr/listDivider" />
-        </androidx.cardview.widget.CardView>
-
-        <androidx.cardview.widget.CardView
-            app:cardBackgroundColor="@color/light_red"
-            android:layout_width="380dp"
-            android:layout_height="100dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentRight="true"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="260dp"
-            android:layout_marginEnd="20dp"
-            app:cardCornerRadius="15dp"
-            app:cardElevation="5dp">
-
-
-            <TextView
-                android:id="@+id/totalCasesATI"
-                android:layout_width="180dp"
-                android:layout_height="30dp"
-                android:layout_marginStart="120dp"
-                android:layout_marginLeft="120dp"
-                android:layout_marginTop="15dp"
-                android:fontFamily="sans-serif"
-                android:gravity="center_horizontal"
-                android:text="Internati ATI"
-                android:textAlignment="center"
-                android:textColor="@color/virus"
-                android:textSize="16sp"
-                android:textStyle="bold"
-                android:typeface="sans" />
-
-            <TextView
-                android:id="@+id/totalCasesNo2"
-                android:layout_width="180dp"
-                android:layout_height="50dp"
-                android:layout_marginStart="120dp"
-                android:layout_marginLeft="120dp"
-                android:layout_marginTop="45dp"
-                android:fontFamily="sans-serif"
-                android:gravity="center_horizontal"
-                android:text="600,900"
-                android:textColor="@color/virus"
-                android:textSize="30sp"
-                android:textStyle="bold"
-                android:typeface="sans" />
-
-            <ImageView
-                android:id="@+id/imageTotalICU"
-                android:layout_width="65dp"
-                android:layout_height="65dp"
-                android:layout_marginStart="17dp"
-                android:layout_marginLeft="17dp"
-                android:layout_marginTop="19dp"
-                app:srcCompat="@drawable/ic_user_nurse_solid"
-                tools:ignore="VectorDrawableCompat" />
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
@@ -339,5 +389,50 @@
             android:layout_height="250dp"
             android:layout_marginTop="500dp"
             android:layout_marginBottom="18dp" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/nationalStatistics"
+            android:layout_width="380dp"
+            android:layout_height="100dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="23dp"
+            android:layout_marginLeft="23dp"
+            android:layout_marginTop="770dp"
+            android:layout_marginEnd="17dp"
+            android:layout_marginRight="17dp"
+            android:layout_marginBottom="17dp"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="10dp">
+
+            <ImageView
+                android:id="@+id/imageRo"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="17dp"
+                android:layout_marginLeft="17dp"
+                android:layout_marginTop="17dp"
+                app:srcCompat="@drawable/ic_map"
+                tools:ignore="VectorDrawableCompat" />
+
+            <TextView
+                android:id="@+id/totalCountyCasesTitle"
+                android:layout_width="200dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="120dp"
+                android:layout_marginLeft="120dp"
+                android:layout_marginTop="17dp"
+                android:fontFamily="sans-serif"
+                android:gravity="center_horizontal"
+                android:text="Situatia la nivel national"
+                android:textAlignment="center"
+                android:textColor="@color/gray1"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:typeface="sans" />
+        </androidx.cardview.widget.CardView>
     </RelativeLayout>
 </ScrollView>

@@ -12,7 +12,13 @@ public class CurrentDayStats
 
     public int numberDeceased;
 
+    public double percentageOfWomen;
+
+    public double percentageOfMen;
+
     public Map<String, VaccineStats> vaccines;
 
     public Map<String, Integer> countyInfectionsNumbers;
+
+    public Map<String, Float> incidence;
 }

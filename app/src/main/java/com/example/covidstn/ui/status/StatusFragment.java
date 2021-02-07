@@ -1,5 +1,7 @@
 package com.example.covidstn.ui.status;
 
+import android.content.Context;
+import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.StrictMode;
@@ -7,12 +9,16 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.annotation.RequiresApi;
+import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.covidstn.CovidData;
 import com.example.covidstn.CurrentDayStats;
@@ -34,21 +40,14 @@ import com.google.firebase.database.ValueEventListener;
 import com.google.gson.Gson;
 
 import java.io.BufferedReader;
-import java.io.BufferedWriter;
-import java.io.File;
-import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
-import java.net.MalformedURLException;
 import java.net.URL;
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.Map;
 
 
@@ -64,11 +63,17 @@ public class StatusFragment extends Fragment {
         Utils.init(getContext());
         this.view = inflater.inflate(R.layout.fragment_status, container,false);
 
+        NationalFragment nationalFragmentObj = new NationalFragment(getParentFragmentManager());
+        CardView nationalStatistics = view.findViewById(R.id.nationalStatistics);
+
+        nationalStatistics.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                nationalFragmentObj.initializeFragment(new NationalFragment(getParentFragmentManager()));
+            }
+        });
+
         addDatabaseListener();
-
-        //doRefreshData();
-
-        //initializeChart();
 
         return this.view;
     }
@@ -109,6 +114,13 @@ public class StatusFragment extends Fragment {
 
         TextView totalDeathsNo = (TextView) view.findViewById(R.id.totalDeathsNo);
         totalDeathsNo.setText(String.valueOf(data.currentDayStats.numberDeceased));
+
+        // percentage
+        TextView percentageOfWomen = (TextView) view.findViewById(R.id.percentageOfWomen);
+        percentageOfWomen.setText(String.valueOf(data.currentDayStats.percentageOfWomen) + "%");
+
+        TextView percentageOfMen = (TextView) view.findViewById(R.id.percentageOfMen);
+        percentageOfMen.setText(String.valueOf(data.currentDayStats.percentageOfMen) + "%");
 
         // Daily Cases
         TextView dailyCasesTitle = (TextView) view.findViewById(R.id.dailyCasesTitle);
@@ -232,8 +244,8 @@ public class StatusFragment extends Fragment {
         String result = content.toString();
 
         FirebaseDatabase database = FirebaseDatabase.getInstance();
-        DatabaseReference myRef = database.getReference("covidData");
+        DatabaseReference covidDataReference = database.getReference("covidData");
 
-        myRef.setValue(result);
+        covidDataReference.setValue(result);
     }
 }
