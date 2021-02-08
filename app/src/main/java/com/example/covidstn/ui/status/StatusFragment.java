@@ -204,43 +204,4 @@ public class StatusFragment extends Fragment {
         chart.setData(data);
         chart.invalidate();
     }
-
-    private void doRefreshData() {
-        try {
-            int SDK_INT = android.os.Build.VERSION.SDK_INT;
-            if (SDK_INT > 8)
-            {
-                StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder()
-                        .permitAll().build();
-                StrictMode.setThreadPolicy(policy);
-            }
-            refreshData();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
-
-    private void refreshData() throws IOException {
-
-        URL url = new URL("https://d35p9e4fm9h3wo.cloudfront.net/latestData.json");
-        HttpURLConnection con = (HttpURLConnection) url.openConnection();
-        con.setRequestMethod("GET");
-
-        BufferedReader in = new BufferedReader(
-                new InputStreamReader(con.getInputStream()));
-        String inputLine;
-        StringBuffer content = new StringBuffer();
-        while ((inputLine = in.readLine()) != null) {
-            content.append(inputLine);
-        }
-        in.close();
-        con.disconnect();
-
-        String result = content.toString();
-
-        FirebaseDatabase database = FirebaseDatabase.getInstance();
-        DatabaseReference covidDataReference = database.getReference("covidData");
-
-        covidDataReference.setValue(result);
-    }
 }

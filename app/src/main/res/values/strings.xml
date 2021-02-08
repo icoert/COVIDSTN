@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">COVIDSTN</string>
+    <string name="app_name">Statistici Covid</string>
     <string name="stats">Stats</string>
     <string name="Check_in">check in</string>
     <string name="Covid19" />
@@ -7,4 +7,5 @@
     <string name="Vaccinare">Vaccinare</string>
     <string name="Statistici">Statistici</string>
     <string name="ajutor">Ajutor</string>
+    <string name="action_sync">sync</string>
 </resources>
