@@ -21,7 +21,7 @@ reprezentând evoluția dozelor administrate în ultima săptămână;
     <img  src="https://i.ibb.co/nmpStHZ/image.png"> 
 </p>
 
-▪ Ajutor, pagina această reprezintă o fereastră ce conține detalii despre virusul COVID-19, 
+▪ Ajutor, pagina aceasta reprezintă o fereastră ce conține detalii despre virusul COVID-19, 
 simptomele acestuia și numărul de telefon la care se poate suna pentru o astfel de urgență. 
 <p align="center" width="100%">
     <img  src="https://i.ibb.co/sR8KGqH/image.png"> 
