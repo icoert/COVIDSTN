@@ -25,12 +25,12 @@
 
             <ImageView
                 android:id="@+id/imageTotalDosesAdministrated"
-                android:layout_width="60dp"
-                android:layout_height="60dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
                 android:layout_marginStart="17dp"
                 android:layout_marginLeft="17dp"
                 android:layout_marginTop="17dp"
-                app:srcCompat="@drawable/ic_lungs_virus_solid"
+                app:srcCompat="@drawable/ic_syringe_blue"
                 tools:ignore="VectorDrawableCompat" />
 
             <TextView
@@ -83,8 +83,8 @@
 
             <ImageView
                 android:id="@+id/immunizedPfizerImage"
-                android:layout_width="55dp"
-                android:layout_height="55dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
                 android:layout_marginStart="17dp"
                 android:layout_marginLeft="17dp"
                 android:layout_marginTop="17dp"
@@ -178,21 +178,21 @@
 
             <ImageView
                 android:id="@+id/pfizerImage"
-                android:layout_width="55dp"
-                android:layout_height="55dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
                 android:layout_marginStart="17dp"
                 android:layout_marginLeft="17dp"
                 android:layout_marginTop="17dp"
-                app:srcCompat="@drawable/ic_virus_slash_solid"
+                app:srcCompat="@drawable/ic_user_nurse_solid"
                 tools:ignore="VectorDrawableCompat" />
 
             <TextView
                 android:id="@+id/totalPfizerAdministered"
                 android:layout_width="100dp"
-                android:layout_height="39dp"
-                android:layout_marginStart="80dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="100dp"
                 android:layout_marginLeft="100dp"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="15dp"
                 android:fontFamily="sans-serif"
                 android:gravity="center"
                 android:text="Doze Pfizer Administrate"
@@ -206,9 +206,9 @@
                 android:id="@+id/totalPfizerAdministeredNo"
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="80dp"
-                android:layout_marginLeft="120dp"
-                android:layout_marginTop="45dp"
+                android:layout_marginStart="100dp"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="50dp"
                 android:fontFamily="sans-serif"
                 android:gravity="center_horizontal"
                 android:text="40,800"
@@ -217,23 +217,13 @@
                 android:textStyle="bold"
                 android:typeface="sans" />
 
-            <ImageView
-                android:id="@+id/modernaImage"
-                android:layout_width="55dp"
-                android:layout_height="55dp"
-                android:layout_marginStart="190dp"
-                android:layout_marginLeft="20dp"
-                android:layout_marginTop="20dp"
-                app:srcCompat="@drawable/ic_skull_crossbones_solid"
-                tools:ignore="VectorDrawableCompat" />
-
             <TextView
                 android:id="@+id/totalModernaAdministeredTitle"
-                android:layout_width="106dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="250dp"
-                android:layout_marginLeft="120dp"
-                android:layout_marginTop="10dp"
+                android:layout_width="130dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="230dp"
+                android:layout_marginLeft="230dp"
+                android:layout_marginTop="15dp"
                 android:fontFamily="sans-serif"
                 android:gravity="center_horizontal"
                 android:text="Doze Moderna Administrate"
@@ -249,7 +239,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="250dp"
                 android:layout_marginLeft="120dp"
-                android:layout_marginTop="45dp"
+                android:layout_marginTop="50dp"
                 android:text="40,800"
                 android:textColor="@color/black"
                 android:gravity="center_horizontal"
@@ -260,10 +250,10 @@
 
             <View
                 android:id="@+id/divider"
-                android:layout_width="2dp"
-                android:layout_marginStart="180dp"
-                android:layout_marginLeft="120dp"
+                android:layout_width="1dp"
                 android:layout_height="match_parent"
+                android:layout_marginStart="220dp"
+                android:layout_marginLeft="120dp"
                 android:background="?android:attr/listDivider" />
         </androidx.cardview.widget.CardView>
 
@@ -286,12 +276,12 @@
 
             <ImageView
                 android:id="@+id/imageDailyVaccines"
-                android:layout_width="55dp"
-                android:layout_height="55dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
                 android:layout_marginStart="17dp"
                 android:layout_marginLeft="17dp"
                 android:layout_marginTop="17dp"
-                app:srcCompat="@drawable/ic_viruses_solid"
+                app:srcCompat="@drawable/ic_prescription_bottle_alt_solid"
                 tools:ignore="VectorDrawableCompat" />
 
             <TextView
