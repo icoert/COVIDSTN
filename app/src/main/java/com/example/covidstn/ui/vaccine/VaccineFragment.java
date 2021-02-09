@@ -87,12 +87,6 @@ public class VaccineFragment extends Fragment {
         TextView totalDosesAdministeredNo = (TextView) view.findViewById(R.id.totalDosesAdministeredNo);
         totalDosesAdministeredNo.setText(String.valueOf(data.currentDayStats.numberTotalDosesAdministered));
 
-        TextView totalPfizerAdministeredNo = (TextView) view.findViewById(R.id.totalPfizerAdministeredNo);
-        totalPfizerAdministeredNo.setText(String.valueOf(data.currentDayStats.vaccines.pfizer.totalAdministered));
-
-        TextView totalModernaAdministeredNo = (TextView) view.findViewById(R.id.totalModernaAdministeredNo);
-        totalModernaAdministeredNo.setText(String.valueOf(data.currentDayStats.vaccines.moderna.totalAdministered));
-
         // immunized
         TextView immunizedPfizerNo = (TextView) view.findViewById(R.id.immunizedPfizerNo);
         immunizedPfizerNo.setText(String.valueOf(data.currentDayStats.vaccines.pfizer.immunized));

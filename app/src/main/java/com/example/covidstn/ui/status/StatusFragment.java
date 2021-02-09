@@ -55,6 +55,7 @@ public class StatusFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+        // initialize utils class for chart
         Utils.init(getContext());
         this.view = inflater.inflate(R.layout.fragment_status, container,false);
 
@@ -77,6 +78,7 @@ public class StatusFragment extends Fragment {
         FirebaseDatabase database = FirebaseDatabase.getInstance();
         DatabaseReference covidDataReference = database.getReference("covidData");
 
+        // create listner for real time database
         ValueEventListener postListener = new ValueEventListener() {
             @RequiresApi(api = Build.VERSION_CODES.O)
             @Override

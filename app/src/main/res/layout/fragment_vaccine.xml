@@ -75,7 +75,7 @@
             android:layout_alignParentRight="true"
             android:layout_marginStart="21dp"
             android:layout_marginLeft="21dp"
-            android:layout_marginTop="258dp"
+            android:layout_marginTop="135dp"
             android:layout_marginEnd="19dp"
             android:layout_marginRight="19dp"
             app:cardCornerRadius="15dp"
@@ -170,104 +170,9 @@
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="140dp"
-            android:layout_marginEnd="20dp"
-            app:cardCornerRadius="15dp"
-            app:cardElevation="10dp">
-
-            <ImageView
-                android:id="@+id/pfizerImage"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_marginStart="17dp"
-                android:layout_marginLeft="17dp"
-                android:layout_marginTop="17dp"
-                app:srcCompat="@drawable/ic_user_nurse_solid"
-                tools:ignore="VectorDrawableCompat" />
-
-            <TextView
-                android:id="@+id/totalPfizerAdministered"
-                android:layout_width="100dp"
-                android:layout_height="40dp"
-                android:layout_marginStart="100dp"
-                android:layout_marginLeft="100dp"
-                android:layout_marginTop="15dp"
-                android:fontFamily="sans-serif"
-                android:gravity="center"
-                android:text="Doze Pfizer Administrate"
-                android:textAlignment="center"
-                android:textColor="@color/gray1"
-                android:textSize="16sp"
-                android:textStyle="bold"
-                android:typeface="sans" />
-
-            <TextView
-                android:id="@+id/totalPfizerAdministeredNo"
-                android:layout_width="100dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="100dp"
-                android:layout_marginLeft="100dp"
-                android:layout_marginTop="50dp"
-                android:fontFamily="sans-serif"
-                android:gravity="center_horizontal"
-                android:text="40,800"
-                android:textColor="@color/black"
-                android:textSize="25sp"
-                android:textStyle="bold"
-                android:typeface="sans" />
-
-            <TextView
-                android:id="@+id/totalModernaAdministeredTitle"
-                android:layout_width="130dp"
-                android:layout_height="40dp"
-                android:layout_marginStart="230dp"
-                android:layout_marginLeft="230dp"
-                android:layout_marginTop="15dp"
-                android:fontFamily="sans-serif"
-                android:gravity="center_horizontal"
-                android:text="Doze Moderna Administrate"
-                android:textAlignment="center"
-                android:textColor="@color/gray1"
-                android:textSize="16sp"
-                android:textStyle="bold"
-                android:typeface="sans" />
-
-            <TextView
-                android:id="@+id/totalModernaAdministeredNo"
-                android:layout_width="100dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="250dp"
-                android:layout_marginLeft="120dp"
-                android:layout_marginTop="50dp"
-                android:text="40,800"
-                android:textColor="@color/black"
-                android:gravity="center_horizontal"
-                android:typeface="sans"
-                android:fontFamily="sans-serif"
-                android:textStyle="bold"
-                android:textSize="25sp"/>
-
-            <View
-                android:id="@+id/divider"
-                android:layout_width="1dp"
-                android:layout_height="match_parent"
-                android:layout_marginStart="220dp"
-                android:layout_marginLeft="120dp"
-                android:background="?android:attr/listDivider" />
-        </androidx.cardview.widget.CardView>
-
-        <androidx.cardview.widget.CardView
-            android:layout_width="380dp"
-            android:layout_height="100dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentRight="true"
             android:layout_marginStart="22dp"
             android:layout_marginLeft="22dp"
-            android:layout_marginTop="379dp"
+            android:layout_marginTop="255dp"
             android:layout_marginEnd="18dp"
             android:layout_marginRight="18dp"
             android:layout_marginBottom="18dp"
@@ -327,7 +232,7 @@
                 android:gravity="center_horizontal"
                 android:text="6,100"
                 android:textColor="@color/black"
-                android:textSize="30sp"
+                android:textSize="25sp"
                 android:textStyle="bold"
                 android:typeface="sans" />
 
@@ -358,7 +263,7 @@
                 android:gravity="center_horizontal"
                 android:text="123"
                 android:textColor="@color/black"
-                android:textSize="30sp"
+                android:textSize="25sp"
                 android:textStyle="bold"
                 android:typeface="sans" />
         </androidx.cardview.widget.CardView>
@@ -367,7 +272,7 @@
             android:id="@+id/statusChart"
             android:layout_width="match_parent"
             android:layout_height="250dp"
-            android:layout_marginTop="500dp"
+            android:layout_marginTop="370dp"
             android:layout_marginBottom="18dp" />
     </RelativeLayout>
 </ScrollView>
