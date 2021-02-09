@@ -123,7 +123,7 @@ public class VaccineFragment extends Fragment {
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
         LocalDate localDate = LocalDate.parse(stats.parsedOnString, formatter);
 
-//        CurrentDayStats yesterdayStats = historicalData.get(localDate.plusDays(-1).format(formatter));
+//       CurrentDayStats yesterdayStats = historicalData.get(localDate.plusDays(-1).format(formatter));
 
         return stats.vaccines.pfizer.totalAdministered + stats.vaccines.moderna.totalAdministered;
     }
@@ -132,11 +132,11 @@ public class VaccineFragment extends Fragment {
     private void initializeChart(LocalDate date, Map<String, CurrentDayStats> historicalData) {
         BarChart chart = (BarChart) this.view.findViewById(R.id.statusChart);
         BarData data = createChartData(date, historicalData);
-        configureChartAppearance(chart);
+        configureChartAppearance(chart, date);
         prepareChartData(chart, data);
     }
 
-    private void configureChartAppearance(BarChart chart) {
+    private void configureChartAppearance(BarChart chart, LocalDate date) {
         chart.getDescription().setEnabled(false);
         chart.setDrawValueAboveBar(false);
 
@@ -146,8 +146,7 @@ public class VaccineFragment extends Fragment {
             @Override
             public String getFormattedValue(float value) {
                 DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM");
-                LocalDateTime currentDate = LocalDateTime.now();
-                LocalDateTime dayToShow = currentDate.plusDays((int) value - 8);
+                LocalDate dayToShow = date.plusDays((int) value - 8);
                 return dayToShow.format(formatter);
             }
         });

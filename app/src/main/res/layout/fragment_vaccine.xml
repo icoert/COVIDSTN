@@ -88,15 +88,15 @@
                 android:layout_marginStart="17dp"
                 android:layout_marginLeft="17dp"
                 android:layout_marginTop="17dp"
-                app:srcCompat="@drawable/ic_female_solid"
+                app:srcCompat="@drawable/ic_shield_virus_solid"
                 tools:ignore="VectorDrawableCompat" />
 
             <TextView
                 android:id="@+id/immunizedPfizerTitle"
                 android:layout_width="100dp"
                 android:layout_height="50dp"
-                android:layout_marginStart="80dp"
-                android:layout_marginLeft="100dp"
+                android:layout_marginStart="110dp"
+                android:layout_marginLeft="110dp"
                 android:layout_marginTop="10dp"
                 android:fontFamily="sans-serif"
                 android:gravity="center_horizontal"
@@ -111,8 +111,8 @@
                 android:id="@+id/immunizedPfizerNo"
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="80dp"
-                android:layout_marginLeft="120dp"
+                android:layout_marginStart="110dp"
+                android:layout_marginLeft="110dp"
                 android:layout_marginTop="50dp"
                 android:fontFamily="sans-serif"
                 android:gravity="center_horizontal"
@@ -122,22 +122,12 @@
                 android:textStyle="bold"
                 android:typeface="sans" />
 
-            <ImageView
-                android:id="@+id/immunizedModernaImage"
-                android:layout_width="55dp"
-                android:layout_height="55dp"
-                android:layout_marginStart="190dp"
-                android:layout_marginLeft="20dp"
-                android:layout_marginTop="20dp"
-                app:srcCompat="@drawable/ic_male_solid"
-                tools:ignore="VectorDrawableCompat" />
-
             <TextView
                 android:id="@+id/immunizedModernaTitle"
                 android:layout_width="100dp"
                 android:layout_height="50dp"
-                android:layout_marginStart="250dp"
-                android:layout_marginLeft="120dp"
+                android:layout_marginStart="240dp"
+                android:layout_marginLeft="240dp"
                 android:layout_marginTop="10dp"
                 android:fontFamily="sans-serif"
                 android:gravity="center_horizontal"
@@ -152,8 +142,8 @@
                 android:id="@+id/immunizedModernaNo"
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="250dp"
-                android:layout_marginLeft="120dp"
+                android:layout_marginStart="240dp"
+                android:layout_marginLeft="240dp"
                 android:layout_marginTop="50dp"
                 android:fontFamily="sans-serif"
                 android:gravity="center_horizontal"
@@ -167,7 +157,7 @@
                 android:id="@+id/dividerPercent"
                 android:layout_width="2dp"
                 android:layout_height="match_parent"
-                android:layout_marginStart="180dp"
+                android:layout_marginStart="220dp"
                 android:layout_marginLeft="120dp"
                 android:background="?android:attr/listDivider" />
         </androidx.cardview.widget.CardView>
