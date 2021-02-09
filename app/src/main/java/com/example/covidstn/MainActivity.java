@@ -75,7 +75,6 @@ public class MainActivity extends AppCompatActivity {
         }
     };
 
-
     private void doRefreshData() {
         try {
             int SDK_INT = android.os.Build.VERSION.SDK_INT;
