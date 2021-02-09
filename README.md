@@ -13,7 +13,7 @@ ce duce către un alt Fragment unde se poate observa incidența la nivel națion
     <img  src="https://i.ibb.co/6WyHXxW/image.png"> 
 </p>
 
-▪ Vaccinare, reprezintă o pagină pe același principiul, navigarea către aceasta realizându-se prin 
+▪ Vaccinare, reprezintă o pagină pe același principiu, navigarea către aceasta realizându-se prin 
 atingerea pictogramei sugestive. Această pagină conține informații referitoare la totalul 
 dozelor administrate, atât cât ține de cele Pfizer, cât și de cele Moderna și un grafic cu bare 
 reprezentând evoluția dozelor administrate în ultima săptămână; 
