@@ -1,7 +1,393 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/purple_500">
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
-</RelativeLayout>
+        <androidx.cardview.widget.CardView
+            android:layout_width="380dp"
+            android:layout_height="100dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="21dp"
+            android:layout_marginLeft="21dp"
+            android:layout_marginEnd="17dp"
+            android:layout_marginTop="17dp"
+            android:layout_marginRight="17dp"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="10dp">
+
+            <ImageView
+                android:id="@+id/imageTotalDosesAdministrated"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="17dp"
+                android:layout_marginLeft="17dp"
+                android:layout_marginTop="17dp"
+                app:srcCompat="@drawable/ic_lungs_virus_solid"
+                tools:ignore="VectorDrawableCompat" />
+
+            <TextView
+                android:id="@+id/totalDosesAdministeredTitle"
+                android:layout_width="180dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="120dp"
+                android:layout_marginLeft="120dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif"
+                android:gravity="center_horizontal"
+                android:text="Total doze administrate"
+                android:textAlignment="center"
+                android:textColor="@color/gray1"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:typeface="sans" />
+
+            <TextView
+                android:id="@+id/totalDosesAdministeredNo"
+                android:layout_width="180dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="120dp"
+                android:layout_marginLeft="120dp"
+                android:layout_marginTop="45dp"
+                android:fontFamily="sans-serif"
+                android:gravity="center_horizontal"
+                android:text="600,900"
+                android:textColor="@color/black"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:typeface="sans" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="380dp"
+            android:layout_height="100dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="21dp"
+            android:layout_marginLeft="21dp"
+            android:layout_marginTop="258dp"
+            android:layout_marginEnd="19dp"
+            android:layout_marginRight="19dp"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="10dp">
+
+            <ImageView
+                android:id="@+id/immunizedPfizerImage"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_marginStart="17dp"
+                android:layout_marginLeft="17dp"
+                android:layout_marginTop="17dp"
+                app:srcCompat="@drawable/ic_female_solid"
+                tools:ignore="VectorDrawableCompat" />
+
+            <TextView
+                android:id="@+id/immunizedPfizerTitle"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="80dp"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif"
+                android:gravity="center_horizontal"
+                android:text="Pfizer Imunizati"
+                android:textAlignment="center"
+                android:textColor="@color/gray1"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:typeface="sans" />
+
+            <TextView
+                android:id="@+id/immunizedPfizerNo"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="80dp"
+                android:layout_marginLeft="120dp"
+                android:layout_marginTop="50dp"
+                android:fontFamily="sans-serif"
+                android:gravity="center_horizontal"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:typeface="sans" />
+
+            <ImageView
+                android:id="@+id/immunizedModernaImage"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_marginStart="190dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                app:srcCompat="@drawable/ic_male_solid"
+                tools:ignore="VectorDrawableCompat" />
+
+            <TextView
+                android:id="@+id/immunizedModernaTitle"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="250dp"
+                android:layout_marginLeft="120dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif"
+                android:gravity="center_horizontal"
+                android:text="Moderna Imunizati"
+                android:textAlignment="center"
+                android:textColor="@color/gray1"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:typeface="sans" />
+
+            <TextView
+                android:id="@+id/immunizedModernaNo"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="250dp"
+                android:layout_marginLeft="120dp"
+                android:layout_marginTop="50dp"
+                android:fontFamily="sans-serif"
+                android:gravity="center_horizontal"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:typeface="sans" />
+
+            <View
+                android:id="@+id/dividerPercent"
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="180dp"
+                android:layout_marginLeft="120dp"
+                android:background="?android:attr/listDivider" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="380dp"
+            android:layout_height="100dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="140dp"
+            android:layout_marginEnd="20dp"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="10dp">
+
+            <ImageView
+                android:id="@+id/pfizerImage"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_marginStart="17dp"
+                android:layout_marginLeft="17dp"
+                android:layout_marginTop="17dp"
+                app:srcCompat="@drawable/ic_virus_slash_solid"
+                tools:ignore="VectorDrawableCompat" />
+
+            <TextView
+                android:id="@+id/totalPfizerAdministered"
+                android:layout_width="100dp"
+                android:layout_height="39dp"
+                android:layout_marginStart="80dp"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif"
+                android:gravity="center"
+                android:text="Doze Pfizer Administrate"
+                android:textAlignment="center"
+                android:textColor="@color/gray1"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:typeface="sans" />
+
+            <TextView
+                android:id="@+id/totalPfizerAdministeredNo"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="80dp"
+                android:layout_marginLeft="120dp"
+                android:layout_marginTop="45dp"
+                android:fontFamily="sans-serif"
+                android:gravity="center_horizontal"
+                android:text="40,800"
+                android:textColor="@color/black"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:typeface="sans" />
+
+            <ImageView
+                android:id="@+id/modernaImage"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_marginStart="190dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                app:srcCompat="@drawable/ic_skull_crossbones_solid"
+                tools:ignore="VectorDrawableCompat" />
+
+            <TextView
+                android:id="@+id/totalModernaAdministeredTitle"
+                android:layout_width="106dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="250dp"
+                android:layout_marginLeft="120dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif"
+                android:gravity="center_horizontal"
+                android:text="Doze Moderna Administrate"
+                android:textAlignment="center"
+                android:textColor="@color/gray1"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:typeface="sans" />
+
+            <TextView
+                android:id="@+id/totalModernaAdministeredNo"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="250dp"
+                android:layout_marginLeft="120dp"
+                android:layout_marginTop="45dp"
+                android:text="40,800"
+                android:textColor="@color/black"
+                android:gravity="center_horizontal"
+                android:typeface="sans"
+                android:fontFamily="sans-serif"
+                android:textStyle="bold"
+                android:textSize="25sp"/>
+
+            <View
+                android:id="@+id/divider"
+                android:layout_width="2dp"
+                android:layout_marginStart="180dp"
+                android:layout_marginLeft="120dp"
+                android:layout_height="match_parent"
+                android:background="?android:attr/listDivider" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="380dp"
+            android:layout_height="100dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="22dp"
+            android:layout_marginLeft="22dp"
+            android:layout_marginTop="379dp"
+            android:layout_marginEnd="18dp"
+            android:layout_marginRight="18dp"
+            android:layout_marginBottom="18dp"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="10dp">
+
+            <ImageView
+                android:id="@+id/imageDailyVaccines"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_marginStart="17dp"
+                android:layout_marginLeft="17dp"
+                android:layout_marginTop="17dp"
+                app:srcCompat="@drawable/ic_viruses_solid"
+                tools:ignore="VectorDrawableCompat" />
+
+            <TextView
+                android:id="@+id/dailyVaccinesTitle"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="120dp"
+                android:layout_marginLeft="80dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif"
+                android:gravity="center_horizontal"
+                android:text="5 Februarie 2021"
+                android:textAlignment="center"
+                android:textColor="@color/gray1"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:typeface="sans" />
+
+            <TextView
+                android:id="@+id/dailyPfizerVaccines"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="90dp"
+                android:layout_marginLeft="80dp"
+                android:layout_marginTop="33dp"
+                android:fontFamily="sans-serif"
+                android:gravity="center_horizontal"
+                android:text="Doze Pfizer"
+                android:textAlignment="center"
+                android:textColor="@color/gray1"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:typeface="sans" />
+
+            <TextView
+                android:id="@+id/dailyPfizerVaccinesNo"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="90dp"
+                android:layout_marginLeft="90dp"
+                android:layout_marginTop="50dp"
+                android:fontFamily="sans-serif"
+                android:gravity="center_horizontal"
+                android:text="6,100"
+                android:textColor="@color/black"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:typeface="sans" />
+
+            <TextView
+                android:id="@+id/dailyModernaVaccinesTitle"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="210dp"
+                android:layout_marginLeft="80dp"
+                android:layout_marginTop="33dp"
+                android:fontFamily="sans-serif"
+                android:gravity="center_horizontal"
+                android:text="Doze Moderna"
+                android:textAlignment="center"
+                android:textColor="@color/gray1"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:typeface="sans" />
+
+            <TextView
+                android:id="@+id/dailyModernaVaccinesNo"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="210dp"
+                android:layout_marginLeft="210dp"
+                android:layout_marginTop="50dp"
+                android:fontFamily="sans-serif"
+                android:gravity="center_horizontal"
+                android:text="123"
+                android:textColor="@color/black"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:typeface="sans" />
+        </androidx.cardview.widget.CardView>
+
+        <com.github.mikephil.charting.charts.BarChart
+            android:id="@+id/statusChart"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginTop="500dp"
+            android:layout_marginBottom="18dp" />
+    </RelativeLayout>
+</ScrollView>

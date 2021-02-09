@@ -1,7 +1,5 @@
 package com.example.covidstn.dto;
 
-import com.example.covidstn.VaccineStats;
-
 import java.util.Map;
 
 public class CurrentDayStats
@@ -9,6 +7,8 @@ public class CurrentDayStats
     public String parsedOnString;
 
     public int numberInfected;
+
+    public int numberTotalDosesAdministered;
 
     public int numberCured;
 
@@ -18,7 +18,7 @@ public class CurrentDayStats
 
     public double percentageOfMen;
 
-    public Map<String, VaccineStats> vaccines;
+    public VaccineStats vaccines;
 
     public Map<String, Integer> countyInfectionsNumbers;
 

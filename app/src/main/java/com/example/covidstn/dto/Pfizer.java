@@ -1,11 +1,10 @@
-package com.example.covidstn;
+package com.example.covidstn.dto;
 
 import com.google.gson.annotations.SerializedName;
 
-public class VaccineStats
-{
+public class Pfizer {
     @SerializedName("total_administered")
-    public int totalAdministrated;
+    public int totalAdministered;
 
     public int immunized;
 }
